@@ -26,7 +26,15 @@ Linux의 PCB는 task_struct로, Sched.h에 선언 되어있음. (https://elixir.
 sol.) forkex.c code 참고
 
 5. 4번의 프로세스 생성상태에서 3, 5, 4, 2, 7, 8, 9, 6, 1 순으로 삭제 하려면 wait/waitpid를 어떻게 써야 할까?
-sol.)
+sol.) forkex_1.c code 참고 프로세스간의 IPC(프로세스 간의 통신)을 사용해 해결 가능하다.
+IPC종류에는 
+1. PIPE
+2. Named PIPE
+3. Message Queue
+4. Shared Memory
+5. Memory Map
+6. socket
+등이 있다.
 
 6. Pipe와 I/O Redirection을 그림과 함께 단계별로 설명하시오
 sol.)
